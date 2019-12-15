@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Bageriet.Models.Product>
+
+
+<h1>@ViewBag.Message</h1>
+
+@foreach (var item in Model)
+{<div>
+        <h3>@item.Name</h3>
+        <h4>@item.Price.ToString("c")</h4>
+        <h6>@item.Description</h6>
+
+    </div>
+}
